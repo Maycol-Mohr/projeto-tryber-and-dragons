@@ -1,3 +1,3 @@
-// import Battle from './Battle';teste
+// import Battle from './Battle';
 
 // export default Battle;

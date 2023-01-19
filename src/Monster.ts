@@ -7,11 +7,11 @@ class Monster implements SimpleFighter {
   }
 
   public get lifePoints(): number {
-    return this.lifePoints;
+    return this._lifePoints;
   }
 
   public get strength(): number {
-    return this.strength;
+    return this._strength;
   }
   
   receiveDamage(attackPoints: number) {

@@ -82,14 +82,16 @@ class Character implements Fighter {
 
   levelUp() {
     this._maxLifePoints += getRandomInt(1, 10);
+    this._strength += getRandomInt(1, 10);
+    this._dexterity += getRandomInt(1, 10);
+    this._defense += getRandomInt(1, 10);
+
+    this._energy.amount = 10;
+
     if (this._maxLifePoints > this._race.maxLifePoints) {
       this._maxLifePoints = this._race.maxLifePoints;
     }
     this._lifePoints = this._maxLifePoints;
-    this._strength += getRandomInt(1, 10);
-    this._dexterity += getRandomInt(1, 10);
-    this._defense += getRandomInt(1, 10);
-    this._energy.amount = 10;
   }
 
   special?(enemy: Fighter) {
